@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DeviceId>30F105C9-681E-420b-A277-7C086EAD8A4E</DeviceId>
+    <UseEmulator>false</UseEmulator>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DeviceId>30F105C9-681E-420b-A277-7C086EAD8A4E</DeviceId>
+    <UseEmulator>true</UseEmulator>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Source>D:\Faculdade\Minicurso Xamarin\Minicurso\Minicurso\Minicurso.UWP\Assets\Square44x44Logo.targetsize-256_altform-unplated.png</Source>
+    <SmallTileSource>D:\Faculdade\Minicurso Xamarin\Minicurso\Minicurso\Minicurso.UWP\Assets\Square44x44Logo.targetsize-256_altform-unplated.png</SmallTileSource>
+    <MediumTileSource>D:\Faculdade\Minicurso Xamarin\Minicurso\Minicurso\Minicurso.UWP\Assets\Square44x44Logo.targetsize-256_altform-unplated.png</MediumTileSource>
+    <WideTileSource>D:\Faculdade\Minicurso Xamarin\Minicurso\Minicurso\Minicurso.UWP\Assets\Square44x44Logo.targetsize-256_altform-unplated.png</WideTileSource>
+    <LargeTileSource>D:\Faculdade\Minicurso Xamarin\Minicurso\Minicurso\Minicurso.UWP\Assets\Square44x44Logo.targetsize-256_altform-unplated.png</LargeTileSource>
+    <AppIconSource>D:\Faculdade\Minicurso Xamarin\Minicurso\Minicurso\Minicurso.UWP\Assets\Square44x44Logo.targetsize-256_altform-unplated.png</AppIconSource>
+    <SplashScreenSource>D:\Faculdade\Minicurso Xamarin\Minicurso\Minicurso\Minicurso.UWP\Assets\Square44x44Logo.targetsize-256_altform-unplated.png</SplashScreenSource>
+    <BadgeLogoSource>D:\Faculdade\Minicurso Xamarin\Minicurso\Minicurso\Minicurso.UWP\Assets\dog_example.png</BadgeLogoSource>
+    <PackageLogoSource>D:\Faculdade\Minicurso Xamarin\Minicurso\Minicurso\Minicurso.UWP\Assets\dog_example.png</PackageLogoSource>
+  </PropertyGroup>
+</Project>

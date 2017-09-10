@@ -3,3 +3,11 @@
 ################################################################################
 
 /.vs
+/Minicurso/Minicurso/bin/Debug
+/Minicurso/Minicurso/obj/Debug
+/Minicurso/Minicurso.Android/bin/Debug
+/Minicurso/Minicurso.Android/obj
+/Minicurso/Minicurso.iOS/obj/iPhone/Debug
+/Minicurso/Minicurso.UWP/bin
+/Minicurso/Minicurso.UWP/obj
+/packages

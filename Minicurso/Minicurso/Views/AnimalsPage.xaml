@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Minicurso.Views.AnimalsPage"
+             Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="ic_add_circle_outline.png"
+                     IsDestructive="False"
+                     Command=""
+                     Order="Primary"/>
+    </ContentPage.ToolbarItems>
+    <ListView x:Name="LstView"
+              ItemsSource="{Binding Animals}"
+              CachingStrategy="RecycleElement"
+              SeparatorVisibility="None"
+              ItemSelected="ListView_ItemSelected"
+              HasUnevenRows="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid Padding="8">
+                        <Frame HasShadow="True"
+                               CornerRadius="5">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.Column="0"
+                                       Aspect="AspectFit"
+                                       Source="dog_example.png"
+                                       HeightRequest="80"
+                                       Margin="5"/>
+                                <StackLayout Grid.Column="1"
+                                             VerticalOptions="Start">
+                                    <Label Text="{Binding Name}"
+                                           FontSize="Large"
+                                           FontAttributes="Bold"/>
+                                    <Label Text="{Binding SpecieName}"/>
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
