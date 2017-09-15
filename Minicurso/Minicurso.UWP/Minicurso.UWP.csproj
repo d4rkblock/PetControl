@@ -126,6 +126,7 @@
     <Content Include="Assets\LargeTile.scale-150.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />
     <Content Include="Assets\LargeTile.scale-400.png" />
+    <Content Include="ic_check.png" />
     <Content Include="login_logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

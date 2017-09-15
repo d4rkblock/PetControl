@@ -3,8 +3,87 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Minicurso.Views.AnimalDetailPage">
     <ContentPage.Content>
-        <StackLayout>
-            
-        </StackLayout>
+        <ListView Header="{Binding .}"
+                  ItemsSource="{Binding Vaccines}"
+                  VerticalOptions="FillAndExpand">
+            <ListView.HeaderTemplate>
+                <DataTemplate>
+                    <StackLayout Spacing="8">
+                        <Frame HasShadow="True"
+                               Margin="8">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.Column="0"
+                                       Source="login_logo.png"
+                                       Aspect="AspectFit"
+                                       HeightRequest="125"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Start"/>
+                                <StackLayout Grid.Column="1"
+                                             VerticalOptions="Start">
+                                    <Label Text="Spike"
+                                           FontSize="Medium"
+                                           FontAttributes="Bold"/>
+                                    <Label Text="Espécie: Cachorro"/>
+                                    <Label Text="Raça: Labrador"/>
+                                    <Label Text="Idade: 3 anos"/>
+                                    <Label Text="Comida: 12:00 / 18:00"/>
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                        <Grid BackgroundColor="#E7E7E7">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0"
+                                   Text="Vacina"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center"/>
+                            <Label Grid.Column="1"
+                                   Text="Data para tomar"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center"/>
+                            <Label Grid.Column="2"
+                                   Text="Status"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center"/>
+                        </Grid>
+                    </StackLayout>
+                </DataTemplate>
+            </ListView.HeaderTemplate>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0"
+                                   Text="{Binding Name}"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center"/>
+                            <Label Grid.Column="1"
+                                   Text="{Binding Date}"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center"/>
+                            <Image Grid.Column="2"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   Aspect="AspectFit"
+                                   HeightRequest="30"
+                                   IsVisible="{Binding AlreadyTook}"
+                                   Source="ic_check.png"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>
